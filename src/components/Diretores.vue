@@ -23,8 +23,8 @@
 </script>
 
 <template>
-    <div class="bg-grey-lighten-4 d-flex justify-center  mt-16 pt-16 pb-16 ">
-        <div class="d-flex justify-center flex-wrap ga-8 w-75">
+    <div class="bg-grey-lighten-4 d-flex justify-center  mt-16 pt-16 pb-16 pr-16 pl-16">
+        <div class="d-flex justify-center flex-wrap ga-8">
             <div v-for="item in items" >
                 <v-card class="width-card">
                     <div class="d-flex flex-no-wrap">
@@ -62,11 +62,11 @@
         height: 200px;
     }
     
-    @media screen and (max-width: 1150px) {
+   /*  @media screen and (max-width: 1150px) {
         .width-card{
             width: 70vw;
         }
-    }
+    } */
     @media screen and (max-width: 650px) {
         .width-card{
             width: 90vw;
