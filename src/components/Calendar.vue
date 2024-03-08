@@ -1,6 +1,10 @@
 <template>
+    <h1 class="text-center text-h1 font-weight-thin mt-16">Eventos</h1>
+
   <div class="d-flex justify-center">
-    <VCalendar :attributes='attrs'/>
+    <div class=" mt-16 w-75">
+      <VCalendar :attributes='attrs' expanded is-dark/>
+    </div>
   </div>
 </template>
 
