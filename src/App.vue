@@ -3,6 +3,7 @@
     <v-main>
       <VideoHeader/>
       <CountPeople/>
+      <Calendar/>
       <Destaques/>
       <Diretores/>
       <Partners/>
