@@ -20,17 +20,7 @@ const todos = ref([
     
   },
 ]);
-/* const attrs = ref([
-   {
-    key: 'today',
-    highlight: true,
-    dates: new Date(2024,0,1),
-    popover: {
-      label: 'Take Noah to basketball practice.',
-      visibility:'click'
-    },
-  },
-]); */
+
 const attrs = computed(() => [
   ...todos.value.map(todo => ({
     dates: todo.dates,

@@ -1,0 +1,9 @@
+<template>
+    <VideoHeader/>
+    <CountPeople/>
+    <Calendar/>
+    <Destaques/>
+    <Diretores/>
+    <Partners/>
+    <Foot/>
+</template>

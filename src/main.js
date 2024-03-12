@@ -16,8 +16,10 @@ import { createApp } from 'vue'
 // calendar
 import VCalendar from 'v-calendar';
 import 'v-calendar/style.css';
+import router from './routes';
 
 const app = createApp(App)
 registerPlugins(app)
 app.use(VCalendar, {})
+app.use(router)
 app.mount('#app')

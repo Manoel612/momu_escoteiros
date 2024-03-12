@@ -1,13 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <VideoHeader/>
-      <CountPeople/>
-      <Calendar/>
-      <Destaques/>
-      <Diretores/>
-      <Partners/>
-      <Foot/>
+      <router-view/>
     </v-main>
   </v-app>
 </template>

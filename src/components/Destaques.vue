@@ -11,15 +11,19 @@
     const items = ref([
     {
         picture: imag1,
+        page: "/destaque"
     },
     {
         picture: imag2,
+        page: "/destaque"
     },
     {
         picture: imag3,
+        page: "/destaque"
     },
     {
         picture: imag4,
+        page: "/destaque"
     }
     ])
 
@@ -29,11 +33,11 @@
     <h1 class="text-center text-h1 font-weight-thin mt-12 mb-12">Destaques</h1>
     <div class="mt-6 d-flex justify-center">
         <div class=" d-flex ga-6 flex-wrap cont-size">
-            <a v-for="item in items" >
-                <div class="card-size">
-                    <v-img :src="item.picture" cover></v-img>
-                </div>
-            </a>
+            <div v-for="item in items" >
+                <router-link :to="item.page" class="card-size">
+                    <v-img :src="item.picture" cover class="rounded"></v-img>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -46,15 +50,13 @@
         --height-contain: calc( var(--height-card) * 2 );
     }
     .card-size{
+        display: block;
         height: var(--height-card);
         width: var(--width-card);
     }
     .cont-size{
         max-width: calc( var(--width-contain) + 24px);
         max-height: calc( var(--height-contain) + 24px);
-    }
-    a{
-        display: block;
     }
 
     @media screen and (max-width: 1150px) {
